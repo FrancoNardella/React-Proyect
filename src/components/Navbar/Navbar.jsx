@@ -1,7 +1,7 @@
 import { useState } from "react";
 import * as s from "./NavbarStyles";
 import imgLogo from "/img/Marca.png";
-import { CartIcon } from '/public/img/CartIcon.png'; // Suponiendo que tienes un ícono para el carrito.
+// import { CartIcon } from '/public/img/CartIcon.png'; // Suponiendo que tienes un ícono para el carrito.
 
 export const Navbar = ({ onCartClick }) => {
   return (
@@ -16,9 +16,7 @@ export const Navbar = ({ onCartClick }) => {
           <s.NavLinkStyled to="/products">Productos</s.NavLinkStyled>
           <s.NavLinkStyled to="/contact">Contactanos</s.NavLinkStyled>
         </s.NavbarItems>
-        <s.CartButton onClick={onCartClick}>
-          <CartIcon />
-        </s.CartButton>
+        <s.CartButton onClick={onCartClick}>{/* <CartIcon /> */}</s.CartButton>
       </s.NavbarContainer>
     </s.HeaderContainer>
   );
